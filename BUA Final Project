@@ -1,0 +1,26 @@
+# BUA451 Final Project – Anshi Sharma
+
+## Project Overview
+This project analyzes global country information using the public BigQuery dataset `bigquery-public-data.country_codes`. The goal is to perform exploratory data analysis (EDA), extract business-relevant insights, and apply a basic predictive model to the dataset. Visualizations were created to support understanding and communication of key patterns.
+
+## Dataset
+- **Source:** [BigQuery Public Dataset - Country Codes](https://console.cloud.google.com/marketplace/details/bigquery-public-data/country-codes)
+- **Description:**  
+  Contains ISO-standard country codes, country names, regions, subregions, and related metadata for countries around the world.
+
+## Methods
+- Connected to BigQuery using Python and Google Cloud BigQuery API.
+- Queried and explored the dataset using SQL.
+- Conducted Exploratory Data Analysis (EDA) to find trends and patterns across regions and subregions.
+- Created visualizations using Seaborn and Plotly (including interactive charts).
+- Built a basic Decision Tree model to simulate predictive modeling based on simple features.
+
+## Key Findings
+- Africa and Europe have the highest number of country entries in the dataset.
+- Sub-Saharan Africa and Northern Europe are dominant subregions based on the number of listed countries.
+- Predictive modeling based solely on country code properties is limited, highlighting the need for richer feature sets in serious international business modeling.
+
+## Technologies Used
+- Python (Pandas, Seaborn, Plotly, Scikit-Learn)
+- Google BigQuery
+- Jupyter Notebook
