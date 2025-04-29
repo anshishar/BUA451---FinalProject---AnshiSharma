@@ -1,26 +1,32 @@
-# BUA451 Final Project – Anshi Sharma
+# BUA451 Final Project – [Your First Name] [Your Last Name]
 
 ## Project Overview
-This project analyzes global country information using the public BigQuery dataset `bigquery-public-data.country_codes`. The goal is to perform exploratory data analysis (EDA), extract business-relevant insights, and apply a basic predictive model to the dataset. Visualizations were created to support understanding and communication of key patterns.
+This project was completed for BUA451. It explores a real-world dataset from BigQuery's public dataset catalog, conducts exploratory data analysis (EDA), and applies predictive modeling techniques to uncover business-relevant insights.
 
 ## Dataset
-- **Source:** [BigQuery Public Dataset - Country Codes](https://console.cloud.google.com/marketplace/details/bigquery-public-data/country-codes)
-- **Description:**  
-  Contains ISO-standard country codes, country names, regions, subregions, and related metadata for countries around the world.
+- **Source**: `bigquery-public-data.chicago_taxi_trips.taxi_trips`
+- **Description**: The dataset contains millions of Chicago taxi trip records, including details such as trip times, distances, fares, tips, pickup and dropoff locations, and payment types.
 
-## Methods
-- Connected to BigQuery using Python and Google Cloud BigQuery API.
-- Queried and explored the dataset using SQL.
-- Conducted Exploratory Data Analysis (EDA) to find trends and patterns across regions and subregions.
-- Created visualizations using Seaborn and Plotly (including interactive charts).
-- Built a basic Decision Tree model to simulate predictive modeling based on simple features.
+## Methods Applied
+- **BigQuery SQL**: Used to filter, select, and prepare the dataset.
+- **Python (Pandas, Seaborn, Plotly)**: Used for data visualization and EDA.
+- **Predictive Modeling**: Logistic Regression and Decision Tree models were applied to predict tipping behavior.
 
 ## Key Findings
-- Africa and Europe have the highest number of country entries in the dataset.
-- Sub-Saharan Africa and Northern Europe are dominant subregions based on the number of listed countries.
-- Predictive modeling based solely on country code properties is limited, highlighting the need for richer feature sets in serious international business modeling.
+- There is a strong positive relationship between fare amounts and tip amounts.
+- Trips paid by credit card tend to have higher tip percentages compared to cash payments.
+- Logistic Regression performed better than a Decision Tree in predicting whether a tip would be given, achieving about 72% accuracy.
 
-## Technologies Used
-- Python (Pandas, Seaborn, Plotly, Scikit-Learn)
-- Google BigQuery
-- Jupyter Notebook
+## Project Files
+- `BUA451_FinalProject_[FirstNameLastName].ipynb`: Jupyter Notebook with SQL queries, EDA, modeling, and analysis.
+- `README.md`: Project description and overview.
+- Visual assets (plots, figures) embedded within the Jupyter Notebook.
+
+## Important Notes
+- This repository is private.
+- Collaborator **rthomas2296** has been added for review.
+- The project includes an interactive visualization using Plotly.
+
+---
+
+*Prepared for BUA451 – Final Project Submission*
